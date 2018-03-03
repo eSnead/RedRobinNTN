@@ -1376,7 +1376,7 @@ class Audio:
         #   downloading the next song
 
         if self.currently_downloading(server):
-            await self.bot.say("I'm already downloading a file!")
+            await self.bot.say("I'm working on it! Be patient!")
             return
 
         lists = self._list_local_playlists()
@@ -1463,7 +1463,7 @@ class Audio:
         #   downloading the next song
 
         if self.currently_downloading(server):
-            await self.bot.say("I'm already downloading a file!")
+            await self.bot.say("I'm working on it! Be patient!")
             return
 
         url = url.strip("<>")
